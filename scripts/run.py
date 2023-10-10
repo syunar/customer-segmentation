@@ -86,7 +86,7 @@ def main(dataset_path, output_dir, drop_cols):
             fig = plot.get_figure()
             fig.savefig(f"{output_dir}\\boxplot_{col}.png")
     
-    df_kmean.to_csv(f"{output_dir}\\df_kmean.csv", index=False)
+    df_kmean.to_csv(f"{output_dir}\\df_kmean.csv")
     return df_kmean
 
 if __name__ == "__main__":
